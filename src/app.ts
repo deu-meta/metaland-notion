@@ -25,7 +25,7 @@ const cacheMiddleware = new ExpressCache(
 	cacheManager.caching({
 		store: 'memory',
 		max: 10000,
-		ttl: 3600, // seconds
+		ttl: 60, // seconds
 	})
 );
 cacheMiddleware.attach(app);
